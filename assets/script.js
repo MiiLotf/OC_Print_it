@@ -78,6 +78,7 @@ setInterval(() => {
 // Écouteurs pour les dots
 dots.forEach((dot, index) => {
     dot.addEventListener('click', () => {
+        currentIndex = index;
         updateSlide(index);
     });
 });
